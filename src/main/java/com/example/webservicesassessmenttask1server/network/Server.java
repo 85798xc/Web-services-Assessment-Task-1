@@ -30,7 +30,7 @@ public class Server {
             while (running) {
                 try (Socket socket = serverSocket.accept();
                      OutputStream out = socket.getOutputStream()) {
-                    // Server ready for connections
+
                 }
             }
         } catch (IOException e) {

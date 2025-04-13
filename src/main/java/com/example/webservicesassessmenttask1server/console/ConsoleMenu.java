@@ -29,7 +29,7 @@ public class ConsoleMenu {
             printMenu();
             try {
                 int choice = scanner.nextInt();
-                scanner.nextLine(); // consume newline
+                scanner.nextLine();
 
                 switch (choice) {
                     case 1 -> addStudent();
