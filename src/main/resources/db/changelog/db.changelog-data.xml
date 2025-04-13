@@ -1,0 +1,35 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+     http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+    <changeSet id="2" author="yourname">
+        <!-- Insert sample student data -->
+        <insert tableName="student">
+            <column name="name" value="John Doe"/>
+            <column name="age" value="20"/>
+        </insert>
+        <insert tableName="student">
+            <column name="name" value="Jane Smith"/>
+            <column name="age" value="21"/>
+        </insert>
+
+        <!-- Insert sample subject data -->
+        <insert tableName="subject">
+            <column name="title" value="Mathematics"/>
+            <column name="credits" value="5"/>
+            <column name="student_id" value="1"/>
+        </insert>
+        <insert tableName="subject">
+            <column name="title" value="Physics"/>
+            <column name="credits" value="4"/>
+            <column name="student_id" value="1"/>
+        </insert>
+        <insert tableName="subject">
+            <column name="title" value="Literature"/>
+            <column name="credits" value="3"/>
+            <column name="student_id" value="2"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
