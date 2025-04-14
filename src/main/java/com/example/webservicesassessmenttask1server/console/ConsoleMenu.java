@@ -23,7 +23,6 @@ public class ConsoleMenu {
 
 
     public void start() {
-        server.startServer();
 
         while (running) {
             printMenu();
